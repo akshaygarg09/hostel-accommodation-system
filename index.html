@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Accommodation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hostel Accommodation System</h1>
+        <nav>
+            <ul>
+                <li><a href="#accommodation-form">Accommodation Form</a></li>
+                <li><a href="#attendance-check">Check Attendance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accommodation-form">
+            <h2>Accommodation Form</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="room">Choose Room:</label>
+                <select id="room" required>
+                    <option value="">Select a room</option>
+                    <option value="Room 101">Room 101</option>
+                    <option value="Room 102">Room 102</option>
+                    <option value="Room 103">Room 103</option>
+                </select>
+
+                <label for="requirements">Additional Requirements:</label>
+                <textarea id="requirements" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="submission-message"></div>
+        </section>
+
+        <section id="attendance-check">
+            <h2>Check Attendance</h2>
+            <label for="student-id">Enter Student ID:</label>
+            <input type="text" id="student-id">
+            <button id="check-attendance">Check Attendance</button>
+            <div id="attendance-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hostel Accommodation System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
